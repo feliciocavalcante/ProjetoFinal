@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store - Loja de Tênis</title>
+    <link rel="stylesheet" href="HomeCss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo0.png" alt="Nike Store">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar produto...">
+                <button class="search-button">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="header-link">Cadastre-se</a>
+                <button class="primary-button">Entrar</button>
+                <a href="#" class="cart-icon">
+                    <img src="img/carrinho.png" alt="Carrinho">
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Produtos</a></li>
+                    <li><a href="#" class="nav-link">Categorias</a></li>
+                    <li><a href="#" class="nav-link">Meus Pedidos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Carrossel de Imagens Corrigido -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <h1>Queima de estoque Nike 🔥</h1>
+                            <p>Descontos imperdíveis em produtos selecionados. Aproveite enquanto durar o estoque!</p>
+                            <button class="primary-button">Ver ofertas</button>
+                        </div>
+                        <div class="slide-image">
+                            <img src="img/tenistopo.png" alt="Nike Shoes">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h1>Coleção Air Jordan 2025</h1>
+                            <p>Descubra os novos modelos da linha Air Jordan com tecnologia de ponta e design exclusivo.</p>
+                            <button class="primary-button">Explorar coleção</button>
+                        </div>
+                        <div class="slide-image">
+                            <img src="img/tenis2.png" alt="Air Jordan Collection">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h1>Acessórios esportivos</h1>
+                            <p>Complemente seu estilo com nossa linha de acessórios premium para esportes e casual.</p>
+                            <button class="primary-button">Ver acessórios</button>
+                        </div>
+                        <div class="slide-image">
+                            <img src="img/tenis3.png" alt="Sports Accessories">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h1>Edição limitada</h1>
+                            <p>Tênis exclusivos em edição limitada. Design único para quem busca exclusividade.</p>
+                            <button class="primary-button">Ver coleção</button>
+                        </div>
+                        <div class="slide-image">
+                            <img src="img/tenis4.png" alt="Limited Edition">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-arrow prev">
+                        
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <button class="carousel-arrow next">
+                        
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Categorias em destaque</h2>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="img/tenistopo.png" alt="Calçados">
+                        </div>
+                        <h3 class="category-title">Calçados</h3>
+                        <p class="category-count">23 produtos</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="img/roupa.png" alt="Roupas">
+                        </div>
+                        <h3 class="category-title">Roupas</h3>
+                        <p class="category-count">45 produtos</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="img/bolca.png" alt="Acessórios">
+                        </div>
+                        <h3 class="category-title">Acessórios</h3>
+                        <p class="category-count">15 produtos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Icons -->
+        <section class="product-categories">
+            <div class="container">
+                <div class="categories-icons">
+                    <div class="category-icon">
+                        <div class="icon-circle">
+                            <img src="img/camisa.png" alt="Camisetas">
+                        </div>
+                        <p>Camisetas</p>
+                    </div>
+                    <div class="category-icon">
+                        <div class="icon-circle">
+                            <img src="img/calca (2).png" alt="Calças">
+                        </div>
+                        <p>Calças</p>
+                    </div>
+                    <div class="category-icon">
+                        <div class="icon-circle">
+                            <img src="img/tenis10.png" alt="Calçados">
+                        </div>
+                        <p>Calçados</p>
+                    </div>
+                    <div class="category-icon">
+                        <div class="icon-circle">
+                            <img src="img/jaqueta2.png" alt="Jaquetas">
+                        </div>
+                        <p>Jaquetas</p>
+                    </div>
+                    <div class="category-icon">
+                        <div class="icon-circle">
+                            <img src="img/bone.png" alt="Acessórios">
+                        </div>
+                        <p>Acessórios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Products Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Produtos em alta</h2>
+                </div>
+                <div class="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenistopo.png" alt="Nike Air Max">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Max</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenistopo.png" alt="Nike Air Force">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Force</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenistopo.png" alt="Nike Air Jordan">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Jordan</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenistopo.png" alt="Nike SB Dunk">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike SB Dunk</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenis4.png" alt="Nike Air Max">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Max</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenis4.png" alt="Nike Air Force">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Force</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenis4.png" alt="Nike Air Jordan">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike Air Jordan</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/tenis4.png" alt="Nike SB Dunk">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nike SB Dunk</h3>
+                            <div class="product-price">
+                                <span class="price-discount">R$ 299</span>
+                                <span class="price-original">R$ 399</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collection -->
+        <section class="featured-collection">
+            <div class="container">
+                <div class="collection-card">
+                    <div class="collection-content">
+                        <h2 class="collection-title">Air Jordan edição de colecionador</h2>
+                        <p class="collection-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="primary-button">Ver oferta</button>
+                    </div>
+                    <div class="collection-image">
+                        <img src="img/tenistopo.png" alt="Air Jordan Collector's Edition">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/tenis4.png" alt="Digital Store">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Informações</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Sobre Digital Store</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Meus Pedidos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Categorias</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Bonés</a></li>
+                            <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Tênis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Contato</h3>
+                        <address class="footer-contact">
+                            <p>Av. Santos Dumont, 1510 - 1 andar</p>
+                            <p>Aldeota, Fortaleza - CE</p>
+                            <p>CEP: 60150-161</p>
+                            <p>+55 85 3051-3411</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">@ 2022 Digital Store</p>
+                <div class="payment-methods">
+                    
+                    <i class="fa-brands fa-instagram" style="color: #cf2a64;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #025cf7;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="HomeScript/script.js"></script>
+</body>
+</html>

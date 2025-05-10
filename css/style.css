@@ -13,6 +13,7 @@ body {
     flex-direction: column;
 }
 
+/* Container */
 .container {
     display: flex;
     flex: 1;
@@ -26,6 +27,7 @@ body {
     align-items: center;
     padding: 2rem;
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .login-card {
@@ -133,7 +135,6 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    
 }
 
 /* Footer */
@@ -237,5 +238,60 @@ footer {
     .footer-column {
         flex: 100%;
         margin-bottom: 1.5rem;
+    }
+    
+    /* Ajustes no formulário */
+    .login-card {
+        padding: 1.5rem;
+    }
+    
+    .form-group input {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+    
+    .btn-login {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    
+    .social-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Responsive para telas menores (mobile) */
+@media (max-width: 480px) {
+    .login-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-group input {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .btn-login {
+        font-size: 1rem;
+        padding: 1.1rem;
+    }
+
+    .social-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .footer-column h3, .footer-column h4 {
+        font-size: 1rem;
+    }
+
+    .footer-column p, .footer-column ul li a {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -20,7 +22,7 @@
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar produto...">
                 <button class="search-button">
-                   <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
             <div class="header-actions">
@@ -33,7 +35,10 @@
         </div>
         <nav class="main-nav">
             <div class="container">
-                <ul class="nav-list">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="#" class="nav-link">Home</a></li>
                     <li><a href="#" class="nav-link">Produtos</a></li>
                     <li><a href="#" class="nav-link">Categorias</a></li>
@@ -41,6 +46,9 @@
                 </ul>
             </div>
         </nav>
+
+
+
     </header>
 
     <!-- Main Content -->
@@ -62,7 +70,8 @@
                     <div class="carousel-slide">
                         <div class="slide-content">
                             <h1>Coleção Air Jordan 2025</h1>
-                            <p>Descubra os novos modelos da linha Air Jordan com tecnologia de ponta e design exclusivo.</p>
+                            <p>Descubra os novos modelos da linha Air Jordan com tecnologia de ponta e design exclusivo.
+                            </p>
                             <button class="primary-button">Explorar coleção</button>
                         </div>
                         <div class="slide-image">
@@ -90,10 +99,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="carousel-controls">
                     <button class="carousel-arrow prev">
-                        
+
                     </button>
                     <div class="carousel-dots">
                         <span class="dot active" data-slide="0"></span>
@@ -102,7 +111,7 @@
                         <span class="dot" data-slide="3"></span>
                     </div>
                     <button class="carousel-arrow next">
-                        
+
                     </button>
                 </div>
             </div>
@@ -299,7 +308,8 @@
                 <div class="collection-card">
                     <div class="collection-content">
                         <h2 class="collection-title">Air Jordan edição de colecionador</h2>
-                        <p class="collection-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="collection-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <button class="primary-button">Ver oferta</button>
                     </div>
                     <div class="collection-image">
@@ -353,7 +363,7 @@
             <div class="footer-bottom">
                 <p class="copyright">@ 2022 Digital Store</p>
                 <div class="payment-methods">
-                    
+
                     <i class="fa-brands fa-instagram" style="color: #cf2a64;"></i>
                     <i class="fa-brands fa-facebook-f" style="color: #025cf7;"></i>
                 </div>
@@ -363,4 +373,5 @@
 
     <script src="HomeScript/script.js"></script>
 </body>
+
 </html>

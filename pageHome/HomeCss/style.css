@@ -356,6 +356,7 @@ ul {
   color: #8f8f8f;
   font-size: 14px;
   margin-bottom: 20px;
+  
 }
 
 /* Product Categories Icons */
@@ -368,6 +369,8 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  
+  
 }
 
 .category-icon {
@@ -376,6 +379,7 @@ ul {
   align-items: center;
   gap: 12px;
   transition: transform 0.3s;
+  
 }
 
 .category-icon:hover {
@@ -392,6 +396,7 @@ ul {
   justify-content: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
 }
 
 .category-icon:hover .icon-circle {
@@ -402,6 +407,7 @@ ul {
 .category-icon p {
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* Products Section */
@@ -421,6 +427,7 @@ ul {
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .product-card:hover {

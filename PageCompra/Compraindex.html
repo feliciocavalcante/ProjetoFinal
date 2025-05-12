@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store - Inspirado na Nike</title>
+    <link rel="stylesheet" href="CompraCss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <img src="img/logoNike.png" alt="">
+                        </div>
+                       
+                    </a>
+                </div>
+                
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Produtos</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Mais Vendidos</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">MEU CARRINHO</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-table">
+                        <div class="cart-table-header">
+                            <div class="cart-header-item">PRODUTO</div>
+                            <div class="cart-header-item">QUANTIDADE</div>
+                            <div class="cart-header-item">UNITÁRIO</div>
+                            <div class="cart-header-item">TOTAL</div>
+                            <div class="cart-header-item">REMOVER</div>
+                        </div>
+                        
+                        <div class="cart-item">
+                            <div class="cart-item-product">
+                                <div class="product-image">
+                                    <img src="img/tenistopo.png" alt="Tênis Nike">
+                                </div>
+                                <div class="product-details">
+                                    <h3>Tênis Nike Revolution 6 Next Nature Masculino</h3>
+                                    <p>Branco / Azul</p>
+                                    <p>Tamanho: 42</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn decrease" id="decreaseBtn">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span id="quantityValue">1</span>
+                                <button class="quantity-btn increase" id="increaseBtn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="cart-item-price">R$ 219,00</div>
+                            
+                            <div class="cart-item-total" id="itemTotal">R$ 219,00</div>
+                            
+                            <div class="cart-item-remove">
+                                <button class="remove-btn">REMOVER</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <div class="coupon-container">
+                            <h3>Cupom de desconto</h3>
+                            <div class="input-group">
+                                <input type="text" placeholder="CUPOM10" value="CUPOM10">
+                                <button>OK</button>
+                            </div>
+                        </div>
+                        
+                        <div class="shipping-container">
+                            <h3>Calcular frete</h3>
+                            <div class="input-group">
+                                <input type="text" placeholder="00000-000" value="60150-161">
+                                <button>OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h2>RESUMO</h2>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span id="subtotalValue">R$ 219,00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Frete</span>
+                            <span>R$ 19,90</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Desconto</span>
+                            <span class="discount">-R$ 21,90</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-total">
+                        <div class="total-label">Total</div>
+                        <div class="total-value">
+                            <div id="totalValue">R$ 219,00</div>
+                            <div class="installments">ou 10x de R$ 21,90 sem juros</div>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn">FINALIZAR COMPRA</button>
+                </div>
+            </div>
+            
+            <div class="related-products">
+                <div class="section-header">
+                    <h2>Produtos Relacionados</h2>
+                    <a href="#" class="view-all">Ver todos <i class="fas fa-chevron-right"></i></a>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-badge">-20% OFF</span>
+                            <img src="img/tenis3.png" alt="Tênis Nike">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">X-Series YR - Masculino</span>
+                            <h3 class="product-name">X-Series YR - Masculino</h3>
+                            <div class="product-price">R$ 599</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-badge">-20% OFF</span>
+                            <img src="img/tenistopo.png" alt="Tênis Nike">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">X-Series YR - Masculino</span>
+                            <h3 class="product-name">X-Series YR - Masculino</h3>
+                            <div class="product-price">R$ 599</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-badge">-20% OFF</span>
+                            <img src="img/tenistopo.png" alt="Tênis Nike">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">X-Series YR - Masculino</span>
+                            <h3 class="product-name">X-Series YR - Masculino</h3>
+                            <div class="product-price">R$ 599</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-badge">-20% OFF</span>
+                            <img src="img/tenistopo.png" alt="Tênis Nike">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">X-Series YR - Masculino</span>
+                            <h3 class="product-name">X-Series YR - Masculino</h3>
+                            <div class="product-price">R$ 599</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="img/logoNikeBranca.png" alt="">
+                        </div>
+                       
+                    </div>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Informações</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Digital Store</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Bonés</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Tênis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <address class="contact-info">
+                        <p>Av. Santos Dumont, 1510 - 1</p>
+                        <p>Andar - Aldeota, Fortaleza -</p>
+                        <p>CE, 60150-161</p>
+                        <p class="phone">(85) 3051-3411</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="CompraScript/script.js"></script>
+</body>
+</html>

@@ -35,3 +35,15 @@ document.addEventListener('click', (event) => {
         document.body.classList.remove('mobile-menu-open'); // Adiciona esta linha
     }
 });
+
+thumbnails.forEach(thumb => {
+  thumb.addEventListener('click', function () {
+    // Atualiza o src da imagem principal com o src da miniatura clicada
+    const newSrc = this.getAttribute('src');
+    mainImage.setAttribute('src', newSrc);
+
+    // Atualiza a classe 'active'
+    thumbnails.forEach(img => img.classList.remove('active'));
+    this.classList.add('active');
+  });
+});

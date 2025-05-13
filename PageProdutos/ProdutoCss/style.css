@@ -122,10 +122,15 @@ header {
     font-weight: 500;
 }
 
+
+
+.main-nav a:hover, 
 .main-nav a.active {
-    color: #C92071;
-    font-weight: bold;
+    color: #e91e63;
 }
+
+
+
 
 /* Mobile menu toggle */
 .mobile-menu-toggle {

@@ -89,6 +89,20 @@ body {
     transition: background-color 0.3s;
 }
 
+.btn-login a{ 
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 72px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+
+
 .btn-login:hover {
     background-color: #a51c5e;
 }

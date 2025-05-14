@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store - Compra Realizada</title>
+    <link rel="stylesheet" href="PageCompraRealizada/CompraRealizadaCss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="PageProdutos/img/logoNike.png" alt="">
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#" class="">Produtos</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count">0</span>
+                </div>
+               
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="success-card">
+                <div class="success-icon">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20tela%202025-05-13%20210619-OPjmkMFbwJgPlY8nSALx0q9gXyIu19.png" alt="Ícone de sucesso" class="hidden-img">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Compra Realizada com sucesso!</h2>
+
+                <div class="info-section">
+                    <h3>Informações Pessoais</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Nome:</span>
+                            <span class="value">Francisco Moreira Pereira</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">CPF:</span>
+                            <span class="value">123.456.789-10</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">E-mail:</span>
+                            <span class="value">francisco@email.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Celular:</span>
+                            <span class="value">(85) 99123-4567</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Informações de Entrega</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Endereço:</span>
+                            <span class="value">Rua João Pessoa, 123</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Bairro:</span>
+                            <span class="value">Centro</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Cidade:</span>
+                            <span class="value">Fortaleza</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">CEP:</span>
+                            <span class="value">60.123-456</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Informações de Pagamento</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Forma de pagamento:</span>
+                            <span class="value">MASTERCARD 4*7</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Valor:</span>
+                            <span class="value">R$219,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Resumo da compra</h3>
+                    <div class="product-item">
+                        <div class="product-image">
+                            
+                            <img src="PageHome/img/tenistopo.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                            <p class="product-price">R$ 219,00</p>
+                        </div>
+                    </div>
+
+                    <div class="total-section">
+                        <h3>Total</h3>
+                        <p class="total-price">R$ 219,00</p>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="print-receipt" class="btn-primary">Imprimir Recibo</button>
+                        <a href="#" class="btn-secondary">Voltar ao Início</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="PageFinalizarCompra/img/logoNikeBranca.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Informações</h3>
+                <ul>
+                    <li><a href="#">Sobre a Digital Store</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Calças</a></li>
+                    <li><a href="#">Tênis</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <address>
+                    <p>Av. Santos Dumont, 1510 - 1</p>
+                    <p>Aldeota - Fortaleza/CE</p>
+                    <p>CEP: 60.150-161</p>
+                    <p>+55 (85) 3051-3411</p>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© 2025 Digital Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="PageCompraRealizada/CompraRealizadaScript/script.js"></script>
+</body>
+</html>

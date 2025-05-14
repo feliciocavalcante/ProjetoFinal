@@ -1,0 +1,346 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #d81b60;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 30px;
+    ;
+}
+ 
+
+
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    background-color: #d8d0f0;
+    padding: 40px 0;
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #d81b60;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #c2185b;
+}
+
+.alternative-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.alternative-login p {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.alternative-login p::before,
+.alternative-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.alternative-login p::before {
+    left: 0;
+}
+
+.alternative-login p::after {
+    right: 0;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: #555;
+    transition: all 0.3s;
+}
+
+.social-login a:hover {
+    background-color: #f5f5f5;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+    overflow: hidden;
+    
+}
+
+#shoe-image {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(-15deg);
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.2));
+    transition: transform 0.5s ease;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-logo i {
+    margin-right: 8px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #aaa;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #d81b60;
+}
+
+.footer-column p {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #d81b60;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .signup-container {
+        flex-direction: column;
+    }
+    
+    .form-container {
+        max-width: 100%;
+    }
+    
+    .product-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    #shoe-image {
+        max-width: 80%;
+    }
+    
+    .footer-links {
+        gap: 20px;
+    }
+    
+    .footer-column {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form-container h2 {
+        font-size: 20px;
+    }
+    
+    .btn-primary {
+        padding: 10px;
+    }
+    
+    #shoe-image {
+        max-width: 100%;
+    }
+}

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Elementos do DOM
+    
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
     const decreaseBtn = document.getElementById('decreaseBtn');
@@ -9,20 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const subtotalValue = document.getElementById('subtotalValue');
     const totalValue = document.getElementById('totalValue');
     
-    // Preços base
+  
     const productPrice = 219.00;
     const shippingPrice = 19.90;
     const discountPrice = 21.90;
     
-    // Quantidade inicial
+    
     let quantity = 1;
     
-    // Função para formatar preço
+    
     function formatPrice(price) {
         return 'R$ ' + price.toFixed(2).replace('.', ',');
     }
     
-    // Função para atualizar os totais
+    
     function updateTotals() {
         const subtotal = productPrice * quantity;
         const total = subtotal + shippingPrice - discountPrice;
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         subtotalValue.textContent = formatPrice(subtotal);
         totalValue.textContent = formatPrice(total);
         
-        // Atualiza o valor das parcelas
+        
         const installmentElement = document.querySelector('.installments');
         if (installmentElement) {
             const installmentValue = total / 10;
@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Toggle menu mobile
+    
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             mainNav.classList.toggle('active');
             
-            // Alterna o ícone do menu
+           
             const icon = menuToggle.querySelector('i');
             if (icon.classList.contains('fa-bars')) {
                 icon.classList.remove('fa-bars');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Botões de quantidade
+    
     if (decreaseBtn) {
         decreaseBtn.addEventListener('click', function() {
             if (quantity > 1) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Botão de remover item
+    
     const removeBtn = document.querySelector('.remove-btn');
     if (removeBtn) {
         removeBtn.addEventListener('click', function() {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     cartItem.remove();
                     
-                    // Atualiza o contador do carrinho
+                    
                     const cartCount = document.querySelector('.cart-count');
                     if (cartCount) {
                         const currentCount = parseInt(cartCount.textContent);
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                     
-                    // Se não houver mais itens, exibe mensagem
+                    
                     const cartItems = document.querySelectorAll('.cart-item');
                     if (cartItems.length === 0) {
                         const cartTable = document.querySelector('.cart-table');
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Adiciona estilo para o menu mobile
+   
     const style = document.createElement('style');
     style.textContent = `
         @media (max-width: 767px) {
@@ -147,6 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
     
-    // Inicializa os totais
+    
     updateTotals();
 });

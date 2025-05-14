@@ -1,27 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Referência ao botão de menu mobile
+    
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     
-    // Referência ao botão de imprimir recibo
+    /
     const printReceiptBtn = document.getElementById('print-receipt');
     
-    // Função para alternar o menu mobile (simulação)
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
             alert('Menu mobile será exibido aqui!');
         });
     }
     
-    // Função para imprimir o recibo
+    
     if (printReceiptBtn) {
         printReceiptBtn.addEventListener('click', function() {
-            // Preparar o conteúdo para impressão
+           
             const originalContent = document.body.innerHTML;
             
-            // Criar uma versão simplificada para impressão
+           
             let printContent = document.querySelector('.success-card').cloneNode(true);
             
-            // Adicionar um cabeçalho de impressão
+           
             const printHeader = document.createElement('div');
             printHeader.innerHTML = `
                 <div style="text-align: center; margin-bottom: 20px;">
@@ -31,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
             
-            // Remover os botões da versão de impressão
+            
             const actionButtons = printContent.querySelector('.action-buttons');
             if (actionButtons) {
                 actionButtons.remove();
             }
             
-            // Configurar o conteúdo para impressão
+            
             const printWindow = window.open('', '_blank');
             printWindow.document.write(`
                 <html>
@@ -115,20 +114,20 @@ document.addEventListener('DOMContentLoaded', function() {
             
             printWindow.document.close();
             
-            // Aguardar o carregamento do conteúdo e imprimir
+            
             printWindow.onload = function() {
                 printWindow.print();
-                // printWindow.close(); // Opcional: fechar após imprimir
+                
             };
         });
     }
     
-    // Simular carregamento de dados (em um cenário real, esses dados viriam do backend)
+    
     function simulateDataLoading() {
-        // Aqui você poderia fazer uma requisição AJAX para obter os dados do pedido
+       
         console.log('Dados do pedido carregados com sucesso!');
     }
     
-    // Inicializar a simulação de carregamento de dados
+    
     simulateDataLoading();
 });

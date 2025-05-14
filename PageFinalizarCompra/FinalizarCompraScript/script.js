@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Máscaras para os campos
+    
     const cpfInput = document.getElementById('cpf');
     const telefoneInput = document.getElementById('telefone');
     const cepInput = document.getElementById('cep');
     const cartaoNumeroInput = document.getElementById('cartao-numero');
     const cartaoValidadeInput = document.getElementById('cartao-validade');
     
-    // Máscara para CPF
+    
     if (cpfInput) {
         cpfInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Máscara para telefone
+    
     if (telefoneInput) {
         telefoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Máscara para CEP
+    
     if (cepInput) {
         cepInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.target.value = value;
         });
         
-        // Busca de endereço pelo CEP
+        
         cepInput.addEventListener('blur', function() {
             const cep = this.value.replace(/\D/g, '');
             if (cep.length === 8) {
@@ -76,20 +76,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Máscara para número do cartão
+    
     if (cartaoNumeroInput) {
         cartaoNumeroInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length > 16) value = value.slice(0, 16);
             
-            // Formata em grupos de 4 dígitos
+         
             value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
             
             e.target.value = value;
         });
     }
     
-    // Máscara para validade do cartão
+    
     if (cartaoValidadeInput) {
         cartaoValidadeInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Alternar entre formas de pagamento
+    
     const radioPagamentos = document.querySelectorAll('input[name="pagamento"]');
     const cartaoForm = document.getElementById('cartao-form');
     
@@ -117,12 +117,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Botão de finalizar compra
+    
     const btnFinalizarCompra = document.getElementById('finalizar-compra');
     const btnFinalizarCompraMobile = document.getElementById('finalizar-compra-mobile');
     
     const finalizarCompra = function() {
-        // Validação básica
+       
         const nome = document.getElementById('nome').value;
         const email = document.getElementById('email').value;
         
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Simulação de processamento
+        
         this.textContent = 'Processando...';
         this.disabled = true;
         

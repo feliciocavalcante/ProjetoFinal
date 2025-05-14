@@ -26,14 +26,17 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: #fff;
+    background-color: #c8bef0;
     transition: all 0.3s ease;
 }
 
 .login-card {
+      background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
-    padding: 2rem;
+    max-width: 450px;
 }
 
 .login-card h2 {
